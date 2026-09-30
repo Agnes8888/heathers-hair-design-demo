@@ -78,20 +78,54 @@ section+section{border-top:1px solid var(--line)}
 footer{background:var(--ink);color:#cbbdb5;padding:44px 0 110px;font-size:14px}
 footer .brand{font:600 28px "Cormorant Garamond",serif;color:#fffaf5;margin-bottom:6px}
 footer a{color:#f0c9bd}
+
+.nav{position:sticky;top:0;z-index:20;background:rgba(246,239,231,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.logo{font:600 24px "Cormorant Garamond",serif;text-decoration:none;white-space:nowrap}.logo i{color:var(--clay);font-weight:500}
+.nav .links{display:none;gap:26px;font-size:14.5px;font-weight:500}.nav .links a{text-decoration:none;color:var(--muted)}.nav .links a:hover{color:var(--ink)}
+.navcall{font-weight:600;font-size:14.5px;text-decoration:none;background:var(--ink);color:#fffaf5;padding:9px 16px;border-radius:999px;white-space:nowrap}
+@media(min-width:760px){.nav .links{display:flex}}
+.herogrid{display:grid;gap:34px;align-items:end}
+.herophotos{position:relative;height:340px;max-width:380px}
+.herophotos img{position:absolute;object-fit:cover;border-radius:20px;border:5px solid var(--paper);box-shadow:0 24px 50px -24px rgba(43,34,32,.55)}
+.hp1{width:52%;height:88%;left:0;top:0}.hp2{width:50%;height:84%;right:0;bottom:0}
+@media(min-width:860px){.herogrid{grid-template-columns:1.15fr .85fr}.herophotos{height:480px;max-width:none}.hero{min-height:80svh}}
+.trust{background:var(--ink);color:#e9ddd5}
+.trust .wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px;padding-top:22px;padding-bottom:22px}
+.trust div{display:flex;flex-direction:column;line-height:1.3}.trust b{color:#fffaf5;font-size:15px}.trust span{font-size:13px;color:#b9aaa1}
+@media(min-width:760px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+.svcgrid{grid-template-columns:1fr}
+@media(min-width:620px){.svcgrid{grid-template-columns:1fr 1fr}}
+@media(min-width:980px){.svcwrap{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:start}}
+.sign{margin:14px 0 0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:12px}
+.sign img{width:100%;height:auto;border-radius:14px;display:block}
+.sign figcaption{font-size:13.5px;color:var(--muted);padding:10px 6px 2px}
+.gal{columns:2;column-gap:14px}
+@media(min-width:860px){.gal{columns:4}}
+.gal figure{break-inside:avoid;margin-bottom:14px;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.gal img{width:100%;height:auto;display:block}
+.gal figcaption{position:absolute;left:8px;bottom:8px;font-size:12px;font-weight:600;background:rgba(255,250,245,.9);padding:4px 10px;border-radius:999px}
+.themes{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:22px;font-size:14px;color:var(--muted)}
+.themes b{font-weight:500;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:5px 13px;border-radius:999px}
+#reviews .note a{color:var(--clay);font-weight:600}
+section[id]{scroll-margin-top:64px}
 /* sticky */
 .sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:9;display:flex;gap:10px;transition:opacity .25s,transform .25s;opacity:0;transform:translateY(20px);pointer-events:none}
 .sticky.on{opacity:1;transform:none;pointer-events:auto}
 .sticky a{flex:1;min-height:52px;font-size:15.5px}
 @media(min-width:860px){.sticky{display:none}footer{padding-bottom:44px}.cta{grid-template-columns:1fr 1fr;max-width:540px}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"Heather’s Hair Design","telephone":"+1-604-255-2332","address":{"@type":"PostalAddress","streetAddress":"2239 Commercial Dr","addressLocality":"Vancouver","addressRegion":"BC","postalCode":"V5N 4B6","addressCountry":"CA"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"186"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"18:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"17:30"}]}</script>
 </head>
 <body>
-<div class="preview">Preview made for <b>Heather’s Hair Design</b> by Marketing Enigma</div>
+<div class="preview"><b>Preview Demo</b></div>
 
-<header class="hero">
+<nav class="nav"><div class="wrap"><a class="logo" href="#top">Heather’s <i>Hair Design</i></a><div class="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#hours">Visit</a></div><a class="navcall" href="tel:6042552332">604-255-2332</a></div></nav>
+<header class="hero" id="top">
   <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
   <svg class="strand" viewBox="0 0 190 300" fill="none" stroke="#a85f4c" stroke-width="1.2" aria-hidden="true"><path d="M150 0C60 60 190 120 100 180S90 280 150 300"/><path d="M170 0C80 60 210 120 120 180S110 280 170 300" opacity=".6"/><path d="M130 0C40 60 170 120 80 180S70 280 130 300" opacity=".35"/></svg>
-  <div class="wrap">
+  <div class="wrap herogrid">
+   <div>
     <span class="eyebrow">Hair Salon · Commercial Drive</span>
     <h1>Heather’s<br><i>Hair Design</i></h1>
     <p class="lede">A friendly neighbourhood salon on The Drive for cuts, colour and styling.</p>
@@ -100,19 +134,49 @@ footer a{color:#f0c9bd}
       <a class="btn btn-call" href="tel:6042552332"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call 604-255-2332</a>
       <a class="btn btn-dir" href="https://www.google.com/maps/search/?api=1&amp;query=Heather%27s%20Hair%20Design%2C%202239%20Commercial%20Dr%2C%20Vancouver%2C%20BC&amp;query_place_id=ChIJP1T_uUhxhlQRdD9We2ltuSs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Get Directions</a>
     </div>
+   </div>
+   <div class="herophotos" aria-hidden="false">
+     <img class="hp1" src="images/purple-bob.png" alt="Short stacked bob with violet highlights" width="364" height="597">
+     <img class="hp2" src="images/blue-waves.png" alt="Long curled hair in blue and teal tones" width="328" height="561">
+   </div>
   </div>
 </header>
+
+<div class="trust"><div class="wrap">
+  <div><b>Walk-ins welcome</b><span>No booking needed</span></div>
+  <div><b>4.8 ★ on Google</b><span>186 reviews</span></div>
+  <div><b>Open 7 days</b><span>Mon–Sat 10–6:30</span></div>
+  <div><b>On The Drive</b><span>2239 Commercial Dr</span></div>
+</div></div>
 
 <main>
 <section id="services">
   <div class="wrap">
     <div class="head"><span class="eyebrow">Services</span><h2>Hair, done <i>your</i> way.</h2><p>Honest advice on what suits you, and a stylist who checks in the whole way through.</p></div>
-    <div class="grid three">
-      <div class="card svc"><span class="n">01</span><div><h3>Haircuts</h3><p>Cuts for every length. Clients say Heather knows what suits you and asks for your preferred length.</p></div></div>
-      <div class="card svc"><span class="n">02</span><div><h3>Hair Colouring</h3><p>Colour services — call to talk through what you’re after.</p></div></div>
-      <div class="card svc"><span class="n">03</span><div><h3>Hairstyling</h3><p>Styling to finish your look.</p></div></div>
+    <div class="svcwrap">
+    <div class="grid svcgrid">
+      <div class="card svc"><span class="n">01</span><div><h3>Hair Cuts</h3><p>Men &amp; women. Clients say Heather knows what suits you and asks your preferred length.</p></div></div>
+      <div class="card svc"><span class="n">02</span><div><h3>Colour &amp; Highlights</h3><p>From natural blondes to bold violet and blue.</p></div></div>
+      <div class="card svc"><span class="n">03</span><div><h3>Perm &amp; Straighten</h3><p>Texture or smoothness, your choice.</p></div></div>
+      <div class="card svc"><span class="n">04</span><div><h3>Hair Treatment</h3><p>Care for tired or coloured hair.</p></div></div>
+      <div class="card svc"><span class="n">05</span><div><h3>Shampoo Set &amp; Updos</h3><p>Shampoo set and updo hairstyles for any occasion.</p></div></div>
+      <div class="card svc"><span class="n">06</span><div><h3>Facials, Waxing, Manicures &amp; Pedicures</h3><p>Beauty services alongside your hair appointment.</p></div></div>
     </div>
-    <p class="note">Call for the full service list, pricing and availability.</p>
+    <figure class="sign"><img src="images/storefront-sign.png" alt="Heather’s Hair Design sandwich board listing services, with the phone number 604 255 2332" width="358" height="513" loading="lazy"><figcaption>Out front on Commercial Drive — <b>walk-ins welcome</b>.</figcaption></figure>
+    </div>
+    <p class="note">Call 604-255-2332 for pricing and availability.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Gallery</span><h2>Recent <i>work</i>.</h2><p>Real results from the chair at Heather’s.</p></div>
+    <div class="gal">
+      <figure><img src="images/purple-bob.png" alt="Stacked bob with violet highlights" width="364" height="597" loading="lazy"><figcaption>Violet bob</figcaption></figure>
+      <figure><img src="images/blonde-shag.png" alt="Layered short cut with blonde highlights" width="363" height="454" loading="lazy"><figcaption>Layered cut &amp; highlights</figcaption></figure>
+      <figure><img src="images/blonde-layers.png" alt="Long blonde layers" width="320" height="471" loading="lazy"><figcaption>Blonde layers</figcaption></figure>
+      <figure><img src="images/blue-waves.png" alt="Blue and teal curled colour" width="328" height="561" loading="lazy"><figcaption>Blue &amp; teal colour</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -125,6 +189,8 @@ footer a{color:#f0c9bd}
       <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Always super friendly and welcoming, checks in throughout the haircut.”</blockquote><cite>— Leah, Google review</cite></figure>
       <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Heather was very friendly and helpful providing advice.”</blockquote><cite>— Bekah, Google review</cite></figure>
     </div>
+    <div class="themes"><span>Clients often mention:</span><b>Friendly service</b><b>Great haircuts</b><b>Fair prices</b><b>Attention to detail</b><b>Welcoming atmosphere</b></div>
+    <p class="note"><a href="https://www.google.com/maps/search/?api=1&amp;query=Heather%27s%20Hair%20Design%2C%202239%20Commercial%20Dr%2C%20Vancouver%2C%20BC&amp;query_place_id=ChIJP1T_uUhxhlQRdD9We2ltuSs" target="_blank" rel="noopener">Read all reviews on Google Maps →</a></p>
   </div>
 </section>
 
@@ -134,8 +200,9 @@ footer a{color:#f0c9bd}
     <div class="card">
       <ul class="hrs">
         <li><span>Monday – Saturday</span><span>10:00 AM – 6:30 PM</span></li>
-        <li><span>Sunday</span><span class="soft">From 12 PM · call to confirm</span></li>
+        <li><span>Sunday</span><span>12:00 PM – 5:30 PM</span></li>
       </ul>
+      <p class="note" style="margin-top:14px">Walk-ins welcome · Debit accepted · Bike parking nearby</p>
     </div>
   </div>
 </section>
@@ -156,7 +223,7 @@ footer a{color:#f0c9bd}
   <div class="wrap">
     <div class="brand">Heather’s Hair Design</div>
     <p>2239 Commercial Dr, Vancouver, BC V5N 4B6 · <a href="tel:6042552332">604-255-2332</a></p>
-    <p style="margin-top:14px;font-size:12.5px;opacity:.8">Rating, review count and review excerpts from Google. Demo preview by Marketing Enigma.</p>
+    <p style="margin-top:14px;font-size:12.5px;opacity:.8">Rating, review count and review excerpts from Google. Preview demo.</p>
   </div>
 </footer>
 
