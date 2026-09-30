@@ -105,6 +105,8 @@ footer a{color:#f0c9bd}
 .gal figure{break-inside:avoid;margin-bottom:14px;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
 .gal img{width:100%;height:auto;display:block}
 .gal figcaption{position:absolute;left:8px;bottom:8px;font-size:12px;font-weight:600;background:rgba(255,250,245,.9);padding:4px 10px;border-radius:999px}
+.revgrid{grid-template-columns:1fr}@media(min-width:620px){.revgrid{grid-template-columns:1fr 1fr}}@media(min-width:980px){.revgrid{grid-template-columns:repeat(3,1fr)}}
+.rev blockquote{font-size:20px}
 .themes{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:22px;font-size:14px;color:var(--muted)}
 .themes b{font-weight:500;color:var(--ink);background:var(--paper);border:1px solid var(--line);padding:5px 13px;border-radius:999px}
 #reviews .note a{color:var(--clay);font-weight:600}
@@ -160,7 +162,7 @@ section[id]{scroll-margin-top:64px}
       <div class="card svc"><span class="n">03</span><div><h3>Perm &amp; Straighten</h3><p>Texture or smoothness, your choice.</p></div></div>
       <div class="card svc"><span class="n">04</span><div><h3>Hair Treatment</h3><p>Care for tired or coloured hair.</p></div></div>
       <div class="card svc"><span class="n">05</span><div><h3>Shampoo Set &amp; Updos</h3><p>Shampoo set and updo hairstyles for any occasion.</p></div></div>
-      <div class="card svc"><span class="n">06</span><div><h3>Facials, Waxing, Manicures &amp; Pedicures</h3><p>Beauty services alongside your hair appointment.</p></div></div>
+      <div class="card svc"><span class="n">06</span><div><h3>Facials, Waxing, Manicures &amp; Pedicures</h3><p>Eyebrow threading and beauty services alongside your hair appointment.</p></div></div>
     </div>
     <figure class="sign"><img src="images/storefront-sign.png" alt="Heather’s Hair Design sandwich board listing services, with the phone number 604 255 2332" width="358" height="513" loading="lazy"><figcaption>Out front on Commercial Drive — <b>walk-ins welcome</b>.</figcaption></figure>
     </div>
@@ -170,12 +172,16 @@ section[id]{scroll-margin-top:64px}
 
 <section id="gallery">
   <div class="wrap">
-    <div class="head"><span class="eyebrow">Gallery</span><h2>Recent <i>work</i>.</h2><p>Real results from the chair at Heather’s.</p></div>
+    <div class="head"><span class="eyebrow">Gallery</span><h2>Recent <i>work</i>.</h2><p>Real results from the chair at Heather’s — cuts for men and women, colour and styling.</p></div>
     <div class="gal">
       <figure><img src="images/purple-bob.png" alt="Stacked bob with violet highlights" width="364" height="597" loading="lazy"><figcaption>Violet bob</figcaption></figure>
       <figure><img src="images/blonde-shag.png" alt="Layered short cut with blonde highlights" width="363" height="454" loading="lazy"><figcaption>Layered cut &amp; highlights</figcaption></figure>
       <figure><img src="images/blonde-layers.png" alt="Long blonde layers" width="320" height="471" loading="lazy"><figcaption>Blonde layers</figcaption></figure>
       <figure><img src="images/blue-waves.png" alt="Blue and teal curled colour" width="328" height="561" loading="lazy"><figcaption>Blue &amp; teal colour</figcaption></figure>
+      <figure><img src="images/mens-curls.png" alt="Short natural curls with tapered sides" width="262" height="376" loading="lazy"><figcaption>Curls &amp; taper</figcaption></figure>
+      <figure><img src="images/mens-fade-design.png" alt="Men’s cut with fade and shaved line design" width="237" height="345" loading="lazy"><figcaption>Fade with line detail</figcaption></figure>
+      <figure><img src="images/mens-textured-crop.png" alt="Textured crop with skin fade" width="313" height="472" loading="lazy"><figcaption>Textured crop</figcaption></figure>
+      <figure><img src="images/mens-short-back.png" alt="Classic short back and sides" width="185" height="267" loading="lazy"><figcaption>Short back &amp; sides</figcaption></figure>
     </div>
   </div>
 </section>
@@ -184,12 +190,18 @@ section[id]{scroll-margin-top:64px}
   <div class="wrap">
     <div class="head"><span class="eyebrow">Reviews</span><h2>Loved on <i>The Drive</i>.</h2></div>
     <div class="score"><span class="big">4.8</span><div><span class="stars">★★★★★</span><br><small>186 reviews on Google</small></div></div>
-    <div class="grid three">
-      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“She is truly an angel and always takes great care of us!”</blockquote><cite>— Samantha, Google review</cite></figure>
-      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Always super friendly and welcoming, checks in throughout the haircut.”</blockquote><cite>— Leah, Google review</cite></figure>
-      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Heather was very friendly and helpful providing advice.”</blockquote><cite>— Bekah, Google review</cite></figure>
+    <div class="grid three revgrid">
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“I’ve been going to see Heather with my mom for about 5 years now. She is truly an angel and always takes great care of us! She does an amazing job every time.”</blockquote><cite>— Samantha, Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Always super friendly and welcoming, checks in throughout the haircut. Love my new short hair for the hot weather!”</blockquote><cite>— Leah L., Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Honestly one of the best colour + cuts I’ve ever had! Heather is such a pro, and knew exactly what I wanted. Great tone of blonde highlights.”</blockquote><cite>— Kailey G., Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Didn’t have an appointment but was greeted enthusiastically by Heather and seated almost immediately. Friendly, conversational, and did a great job.”</blockquote><cite>— James D., Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Heather is amazing. Her experience shows in how great the haircut looks and how lovely she is to talk to. I would rate her and her business six stars if I could.”</blockquote><cite>— Jack C., Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Heather is amazing! She got me in on short notice and worked so quickly. She also styled my hair beautifully in an updo for my performance.”</blockquote><cite>— Anushka K., Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Heather did such a great job — she’s fast and she knows what suits you, and ask for your preferred length etc. I feel comfortable and she’s very welcoming. The haircut is also affordable.”</blockquote><cite>— Claris, Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“Super attentive, listened to what I wanted, and made great suggestions. Plus you can’t beat her prices!”</blockquote><cite>— Kelly, Google review</cite></figure>
+      <figure class="card rev"><span class="stars">★★★★★</span><blockquote>“I’ve been seeing her for haircuts, color services and eyebrows for the past 3 years and she never disappoints.”</blockquote><cite>— Nevaeh N., Google review</cite></figure>
     </div>
-    <div class="themes"><span>Clients often mention:</span><b>Friendly service</b><b>Great haircuts</b><b>Fair prices</b><b>Attention to detail</b><b>Welcoming atmosphere</b></div>
+    <div class="themes"><span>Clients often mention:</span><b>Walk-ins welcome</b><b>Friendly service</b><b>Great haircuts</b><b>Affordable prices</b><b>Attention to detail</b><b>Welcoming atmosphere</b></div>
     <p class="note"><a href="https://www.google.com/maps/search/?api=1&amp;query=Heather%27s%20Hair%20Design%2C%202239%20Commercial%20Dr%2C%20Vancouver%2C%20BC&amp;query_place_id=ChIJP1T_uUhxhlQRdD9We2ltuSs" target="_blank" rel="noopener">Read all reviews on Google Maps →</a></p>
   </div>
 </section>
